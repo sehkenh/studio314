@@ -35,7 +35,7 @@ window.addEventListener('scroll', function() {
 });
 
 // Pricing and Classes button interactions
-document.querySelectorAll('.btn-pricing, .btn-package').forEach(button => {
+document.querySelectorAll('.btn-pricing, .btn-package, .btn-ai-class').forEach(button => {
     button.addEventListener('click', function() {
         let planName;
         
@@ -43,6 +43,9 @@ document.querySelectorAll('.btn-pricing, .btn-package').forEach(button => {
             // Para botones de clases
             const card = this.closest('.package-card');
             planName = card.querySelector('h4').textContent;
+        } else if (this.classList.contains('btn-ai-class')) {
+            // Para botón de generación de IA
+            planName = 'Generación de Imagen IA';
         } else {
             // Para botones de pricing
             const card = this.closest('.pricing-card');
@@ -84,6 +87,8 @@ document.querySelectorAll('.btn-pricing, .btn-package').forEach(button => {
                     let planValue;
                     if (this.classList.contains('btn-package')) {
                         planValue = 'clases-' + planName.toLowerCase().replace('á', 'a');
+                    } else if (this.classList.contains('btn-ai-class')) {
+                        planValue = 'generacion-imagen';
                     } else {
                         planValue = planName.toLowerCase().replace('á', 'a');
                     }
