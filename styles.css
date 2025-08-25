@@ -588,24 +588,14 @@ body {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .video-wrapper:hover .video-overlay {
     opacity: 1;
 }
 
-.play-button {
-    width: 60px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    cursor: pointer;
-}
+
 
 .video-info h3 {
     font-size: 1.25rem;
@@ -1001,10 +991,7 @@ body {
     }
     
     .about-content,
-    .demo-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    },
+    .demo-content,
     .contact-content,
     .footer-content {
         grid-template-columns: 1fr;
