@@ -34,11 +34,20 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Pricing button interactions
-document.querySelectorAll('.btn-pricing').forEach(button => {
+// Pricing and Classes button interactions
+document.querySelectorAll('.btn-pricing, .btn-package').forEach(button => {
     button.addEventListener('click', function() {
-        const card = this.closest('.pricing-card');
-        const planName = card.querySelector('h3').textContent;
+        let planName;
+        
+        if (this.classList.contains('btn-package')) {
+            // Para botones de clases
+            const card = this.closest('.package-card');
+            planName = card.querySelector('h4').textContent;
+        } else {
+            // Para botones de pricing
+            const card = this.closest('.pricing-card');
+            planName = card.querySelector('h3').textContent;
+        }
         
         if (this.classList.contains('contact-btn')) {
             // Scroll to contact form for enterprise plan
@@ -52,7 +61,13 @@ document.querySelectorAll('.btn-pricing').forEach(button => {
             // Pre-select enterprise option
             setTimeout(() => {
                 const select = document.querySelector('select');
-                if (select) select.value = 'empresarial';
+                if (select) {
+                    if (this.classList.contains('btn-package')) {
+                        select.value = 'clases-empresarial';
+                    } else {
+                        select.value = 'empresarial';
+                    }
+                }
             }, 500);
         } else {
             // Scroll to contact form and pre-select plan
@@ -66,7 +81,12 @@ document.querySelectorAll('.btn-pricing').forEach(button => {
             setTimeout(() => {
                 const select = document.querySelector('select');
                 if (select) {
-                    const planValue = planName.toLowerCase().replace('á', 'a');
+                    let planValue;
+                    if (this.classList.contains('btn-package')) {
+                        planValue = 'clases-' + planName.toLowerCase().replace('á', 'a');
+                    } else {
+                        planValue = planName.toLowerCase().replace('á', 'a');
+                    }
                     select.value = planValue;
                 }
             }, 500);
