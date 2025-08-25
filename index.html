@@ -3,107 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio314 - Desarrollo Web Profesional</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'Designer';
-            src: url('https://www.dafont.com/es/designer-2.font') format('truetype');
-        }
-    </style>
+    <title>Studio314 - Desarrollo Web & IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <nav>
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="images/logo_studio314.png" alt="Studio314">
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#precios">Precios</a></li>
-                    <li><a href="#ai-services">IA</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo_studio314.png" alt="Studio314">
             </div>
-        </nav>
-        <div class="hero-content">
-            <h1>Desarrollo Web Profesional</h1>
-            <p>Creamos páginas web modernas, funcionales y optimizadas para tu negocio</p>
-            <a href="#precios" class="cta-button">Ver Precios</a>
+            <ul class="nav-menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#pricing">Precios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">🎨</div>
-                    <h3>Diseño Web</h3>
-                    <p>Diseños modernos y atractivos que reflejan la identidad de tu marca</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Desarrollo Web Profesional</div>
+            <h1 class="hero-title">
+                Transformamos ideas en experiencias digitales
+            </h1>
+            <p class="hero-description">
+                Creamos sitios web modernos, aplicaciones inteligentes y soluciones de IA 
+                que impulsan tu negocio hacia el futuro digital.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">Comenzar Proyecto</a>
+                <a href="#portfolio" class="btn-secondary">Ver Trabajos</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">7+</span>
+                    <span class="stat-label">Lenguajes</span>
                 </div>
-                <div class="service-item">
-                    <div class="service-icon">💻</div>
-                    <h3>Desarrollo Frontend</h3>
-                    <p>Interfaces responsivas y optimizadas para todos los dispositivos</p>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Satisfacción</span>
                 </div>
-                <div class="service-item">
-                    <div class="service-icon">⚙️</div>
-                    <h3>Desarrollo Backend</h3>
-                    <p>Sistemas robustos y escalables para tu aplicación web</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon">🚀</div>
-                    <h3>Optimización SEO</h3>
-                    <p>Mejora tu posicionamiento en buscadores y aumenta tu visibilidad</p>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Soporte</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portafolio" class="portfolio">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>Nuestro Portafolio</h2>
+            <div class="section-header">
+                <span class="section-badge">Quiénes Somos</span>
+                <h2 class="section-title">
+                    Desarrollo web profesional con <span class="highlight">tecnología avanzada</span>
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="rich-text">
+                        <p class="lead">
+                            Studio314 se especializa en crear soluciones digitales 
+                            robustas y escalables para empresas que buscan excelencia tecnológica.
+                        </p>
+                        <p>
+                            Trabajamos con metodologías probadas y las mejores prácticas 
+                            de la industria para entregar proyectos que cumplen con los 
+                            más altos estándares de calidad, rendimiento y seguridad.
+                        </p>
+                        <div class="highlight-box">
+                            <h4>Nuestro Enfoque</h4>
+                            <p>
+                                Nos enfocamos en comprender las necesidades específicas de cada 
+                                cliente para desarrollar soluciones personalizadas que impulsen 
+                                el crecimiento y la eficiencia de su negocio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Desarrollo Ágil</h4>
+                        <p>Metodologías modernas para entregas rápidas y eficientes</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h4>IA Integrada</h4>
+                        <p>Soluciones inteligentes que automatizan y optimizan procesos</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Diseño UX/UI</h4>
+                        <p>Interfaces intuitivas centradas en la experiencia del usuario</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Servicios</span>
+                <h2 class="section-title">
+                    Soluciones <span class="highlight">completas</span> 
+                    para tu negocio digital
+                </h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">🌐</div>
+                        <h3>Desarrollo Web</h3>
+                    </div>
+                    <div class="rich-text">
+                        <p>
+                            Creamos <strong>sitios web responsivos</strong> y 
+                            <strong>aplicaciones web progresivas</strong> utilizando 
+                            las últimas tecnologías como React, Vue.js y Node.js.
+                        </p>
+                        <ul>
+                            <li>Sitios web corporativos</li>
+                            <li>E-commerce avanzado</li>
+                            <li>Aplicaciones web personalizadas</li>
+                            <li>Optimización SEO técnico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">🤖</div>
+                        <h3>Inteligencia Artificial</h3>
+                    </div>
+                    <div class="rich-text">
+                        <p>
+                            Implementamos <strong>soluciones de IA</strong> que automatizan 
+                            procesos, mejoran la toma de decisiones y crean experiencias 
+                            personalizadas para tus usuarios.
+                        </p>
+                        <ul>
+                            <li>Chatbots inteligentes con RAG</li>
+                            <li>Análisis predictivo de datos</li>
+                            <li>Visión por computadora</li>
+                            <li>Procesamiento de lenguaje natural</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">📱</div>
+                        <h3>Aplicaciones Móviles</h3>
+                    </div>
+                    <div class="rich-text">
+                        <p>
+                            Desarrollamos <strong>aplicaciones móviles nativas</strong> 
+                            y <strong>multiplataforma</strong> que ofrecen experiencias 
+                            fluidas en iOS y Android.
+                        </p>
+                        <ul>
+                            <li>Apps nativas iOS/Android</li>
+                            <li>Aplicaciones híbridas</li>
+                            <li>PWAs (Progressive Web Apps)</li>
+                            <li>Integración con APIs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">☁️</div>
+                        <h3>Soluciones Cloud</h3>
+                    </div>
+                    <div class="rich-text">
+                        <p>
+                            Migramos y optimizamos tu infraestructura en la <strong>nube</strong>, 
+                            garantizando escalabilidad, seguridad y rendimiento óptimo.
+                        </p>
+                        <ul>
+                            <li>Migración a AWS/Azure/GCP</li>
+                            <li>Arquitecturas serverless</li>
+                            <li>DevOps y CI/CD</li>
+                            <li>Monitoreo y analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Portafolio</span>
+                <h2 class="section-title">
+                    Proyectos que <span class="highlight">transforman</span> negocios
+                </h2>
+            </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="images/aurora_phd.png" alt="Proyecto Aurora Website">
-                    <div class="portfolio-overlay">
-                        <h3>Aurora Aguayo PhD</h3>
-                        <p>Sitio web profesional para astrofísica</p>
-                        <div class="portfolio-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
+                    <div class="portfolio-image">
+                        <img src="images/aurora_phd.png" alt="Aurora PhD">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Aurora Aguayo PhD</h3>
+                                <p>Sitio web académico profesional</p>
+                                <div class="portfolio-tags">
+                                    <span>React</span>
+                                    <span>Responsive</span>
+                                    <span>SEO</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="portfolio-item">
-                    <img src="images/tienda_artista.png" alt="Proyecto Tienda Artista">
-                    <div class="portfolio-overlay">
-                        <h3>Tienda Artista</h3>
-                        <p>E-commerce para galería de arte</p>
-                        <div class="portfolio-tags">
-                            <span>Responsive</span>
-                            <span>Galería</span>
-                            <span>Academia</span>
+                    <div class="portfolio-image">
+                        <img src="images/tienda_artista.png" alt="Tienda Artista">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Tienda Artista</h3>
+                                <p>E-commerce para galería de arte</p>
+                                <div class="portfolio-tags">
+                                    <span>E-commerce</span>
+                                    <span>Galería</span>
+                                    <span>CMS</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="portfolio-item">
-                    <img src="images/demo.png" alt="Proyecto Demo">
-                    <div class="portfolio-overlay">
-                        <h3>Proyecto Demo</h3>
-                        <p>Aplicación web interactiva</p>
-                        <div class="portfolio-tags">
-                            <span>React</span>
-                            <span>API</span>
-                            <span>Database</span>
+                    <div class="portfolio-image">
+                        <img src="images/demo.png" alt="Demo IA">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Sistema IA Avanzado</h3>
+                                <p>Aplicación con visión por computadora</p>
+                                <div class="portfolio-tags">
+                                    <span>IA</span>
+                                    <span>Computer Vision</span>
+                                    <span>API</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,13 +269,90 @@
         </div>
     </section>
 
-    <section id="precios" class="pricing">
+    <!-- Demo Section -->
+    <section class="demo">
         <div class="container">
-            <h2>Planes y Precios</h2>
-            <p class="pricing-subtitle">Soluciones adaptadas a cada necesidad y presupuesto</p>
-            
+            <div class="section-header">
+                <span class="section-badge demo-badge">Demostración Técnica</span>
+                <h2 class="section-title demo-title">Inteligencia Artificial en Acción</h2>
+                <p class="demo-subtitle">Tecnología de vanguardia aplicada a soluciones industriales</p>
+            </div>
+            <div class="demo-content">
+                <div class="demo-video-container">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="powerline_owl-vit.webm" type="video/webm">
+                            Tu navegador no soporta el elemento video.
+                        </video>
+                        <div class="video-overlay">
+                            <div class="play-button">▶</div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Detección Automática de Infraestructura Eléctrica</h3>
+                        <p>Sistema YOLO + OWL-ViT para identificación y análisis de líneas de transmisión</p>
+                    </div>
+                </div>
+                <div class="demo-details">
+                    <div class="tech-specs">
+                        <h4>Especificaciones Técnicas</h4>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-icon">⚡</div>
+                                <div class="spec-content">
+                                    <span class="spec-label">Velocidad</span>
+                                    <span class="spec-value">Tiempo Real</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🎯</div>
+                                <div class="spec-content">
+                                    <span class="spec-label">Precisión</span>
+                                    <span class="spec-value">95%+</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">🔄</div>
+                                <div class="spec-content">
+                                    <span class="spec-label">Procesamiento</span>
+                                    <span class="spec-value">Automático</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">📊</div>
+                                <div class="spec-content">
+                                    <span class="spec-label">Análisis</span>
+                                    <span class="spec-value">Predictivo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="applications">
+                        <h4>Aplicaciones Industriales</h4>
+                        <ul class="applications-list">
+                            <li>Inspección de infraestructura eléctrica</li>
+                            <li>Mantenimiento predictivo</li>
+                            <li>Detección de anomalías</li>
+                            <li>Monitoreo de seguridad</li>
+                            <li>Optimización de recursos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Precios</span>
+                <h2 class="section-title">
+                    Planes diseñados para <span class="highlight">cada necesidad</span>
+                </h2>
+            </div>
             <div class="pricing-grid">
-                <div class="pricing-card basic">
+                <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Básico</h3>
                         <div class="price">
@@ -126,17 +361,20 @@
                         </div>
                         <p class="price-period">Pago único</p>
                     </div>
-                    <ul class="features">
-                        <li>✓ Página web de 1-3 secciones</li>
-                        <li>✓ Diseño responsivo</li>
-                        <li>✓ Formulario de contacto</li>
-                        <li>✓ Optimización básica SEO</li>
-                        <li>✓ 1 mes de soporte</li>
-                    </ul>
-                    <button class="pricing-btn">Elegir Plan</button>
+                    <div class="rich-text">
+                        <p>Perfecto para <strong>emprendedores</strong> y <strong>pequeños negocios</strong> que necesitan presencia digital profesional.</p>
+                        <ul class="pricing-features">
+                            <li>Página web de 1-3 secciones</li>
+                            <li>Diseño responsivo</li>
+                            <li>Formulario de contacto</li>
+                            <li>Optimización básica SEO</li>
+                            <li>1 mes de soporte</li>
+                        </ul>
+                    </div>
+                    <button class="btn-pricing">Elegir Plan</button>
                 </div>
 
-                <div class="pricing-card standard popular">
+                <div class="pricing-card featured">
                     <div class="popular-badge">Más Popular</div>
                     <div class="pricing-header">
                         <h3>Estándar</h3>
@@ -146,18 +384,21 @@
                         </div>
                         <p class="price-period">Pago único</p>
                     </div>
-                    <ul class="features">
-                        <li>✓ Dominio .cl incluido</li>
-                        <li>✓ Página web hasta 7 secciones</li>
-                        <li>✓ Diseño personalizado</li>
-                        <li>✓ Galería de imágenes</li>
-                        <li>✓ Integración redes sociales</li>
-                        <li>✓ 3 meses de soporte</li>
-                    </ul>
-                    <button class="pricing-btn">Elegir Plan</button>
+                    <div class="rich-text">
+                        <p>Ideal para <strong>empresas establecidas</strong> que buscan una presencia digital completa y profesional.</p>
+                        <ul class="pricing-features">
+                            <li>Dominio .cl incluido</li>
+                            <li>Página web hasta 7 secciones</li>
+                            <li>Diseño personalizado</li>
+                            <li>Galería de imágenes</li>
+                            <li>Integración redes sociales</li>
+                            <li>3 meses de soporte</li>
+                        </ul>
+                    </div>
+                    <button class="btn-pricing">Elegir Plan</button>
                 </div>
 
-                <div class="pricing-card premium">
+                <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Premium</h3>
                         <div class="price">
@@ -166,18 +407,21 @@
                         </div>
                         <p class="price-period">Pago único</p>
                     </div>
-                    <ul class="features">
-                        <li>✓ Sitio web completo</li>
-                        <li>✓ E-commerce básico</li>
-                        <li>✓ Panel de administración</li>
-                        <li>✓ Integración con APIs</li>
-                        <li>✓ Optimización completa</li>
-                        <li>✓ 6 meses de soporte</li>
-                    </ul>
-                    <button class="pricing-btn">Elegir Plan</button>
+                    <div class="rich-text">
+                        <p>Para <strong>empresas avanzadas</strong> que requieren funcionalidades complejas y e-commerce.</p>
+                        <ul class="pricing-features">
+                            <li>Sitio web completo</li>
+                            <li>E-commerce básico</li>
+                            <li>Panel de administración</li>
+                            <li>Integración con APIs</li>
+                            <li>Optimización completa</li>
+                            <li>6 meses de soporte</li>
+                        </ul>
+                    </div>
+                    <button class="btn-pricing">Elegir Plan</button>
                 </div>
 
-                <div class="pricing-card enterprise">
+                <div class="pricing-card">
                     <div class="pricing-header">
                         <h3>Empresarial</h3>
                         <div class="price">
@@ -185,106 +429,128 @@
                         </div>
                         <p class="price-period">Según requerimientos</p>
                     </div>
-                    <ul class="features">
-                        <li>✓ Desarrollo personalizado</li>
-                        <li>✓ Aplicaciones web complejas</li>
-                        <li>✓ Integración de sistemas</li>
-                        <li>✓ Arquitectura escalable</li>
-                        <li>✓ Soporte dedicado</li>
-                        <li>✓ Mantenimiento continuo</li>
-                    </ul>
-                    <button class="pricing-btn contact-btn">Contactar</button>
+                    <div class="rich-text">
+                        <p>Soluciones <strong>personalizadas</strong> con <strong>IA integrada</strong> para grandes empresas y proyectos complejos.</p>
+                        <ul class="pricing-features">
+                            <li>Desarrollo personalizado</li>
+                            <li>Integración de IA</li>
+                            <li>Arquitectura escalable</li>
+                            <li>Soporte dedicado 24/7</li>
+                            <li>Consultoría especializada</li>
+                            <li>Mantenimiento continuo</li>
+                        </ul>
+                    </div>
+                    <button class="btn-pricing contact-btn">Contactar</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ai-services" class="ai-services">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Servicios de Inteligencia Artificial</h2>
-            <p class="ai-subtitle">Soluciones avanzadas de IA para tu negocio</p>
-            
-            <div class="ai-grid">
-                <div class="ai-card">
-                    <div class="ai-icon">🧠</div>
-                    <h3>Fine-tuning + IA</h3>
-                    <p>Entrenamiento personalizado de modelos de inteligencia artificial adaptados a las necesidades específicas de tu empresa</p>
-                    <ul class="ai-features">
-                        <li>Modelos de lenguaje personalizados</li>
-                        <li>Optimización de rendimiento</li>
-                        <li>Integración con sistemas existentes</li>
-                    </ul>
-                </div>
-                
-                <div class="ai-card">
-                    <div class="ai-icon">📚</div>
-                    <h3>RAG (Retrieval-Augmented Generation)</h3>
-                    <p>Sistemas de generación aumentada por recuperación para crear chatbots inteligentes con conocimiento específico</p>
-                    <ul class="ai-features">
-                        <li>Chatbots con base de conocimiento</li>
-                        <li>Búsqueda semántica avanzada</li>
-                        <li>Respuestas contextuales precisas</li>
-                    </ul>
-                </div>
-                
-                <div class="ai-card">
-                    <div class="ai-icon">👁️</div>
-                    <h3>YOLO + OWL-ViT</h3>
-                    <p>Detección y reconocimiento de objetos en tiempo real usando las tecnologías más avanzadas de visión por computadora</p>
-                    <ul class="ai-features">
-                        <li>Detección de objetos en tiempo real</li>
-                        <li>Reconocimiento visual avanzado</li>
-                        <li>Análisis automatizado de imágenes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>¿Listo para comenzar tu proyecto?</h2>
-            <p>Contáctanos y conversemos sobre tu idea</p>
-            
-            <div class="contact-grid">
+            <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <p>contacto.studio314@gmail.com</p>
+                    <span class="section-badge">Contacto</span>
+                    <h2>¿Listo para transformar tu negocio?</h2>
+                    <div class="rich-text">
+                        <p class="lead">
+                            Conversemos sobre tu proyecto y descubre cómo podemos 
+                            <strong>impulsar tu presencia digital</strong> al siguiente nivel.
+                        </p>
+                        <p>
+                            Nuestro equipo está disponible para brindarte 
+                            <em>asesoría personalizada</em> y crear la solución 
+                            perfecta para tus necesidades específicas.
+                        </p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <h3>WhatsApp</h3>
-                        <p>+569 32199027</p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">⏰</div>
-                        <h3>Horarios</h3>
-                        <p>Lun - Vie: 9:00 - 18:00</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contacto.studio314@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+569 32199027</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h4>Horarios</h4>
+                                <p>Lun - Vie: 9:00 - 18:00</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <form class="contact-form">
-                    <input type="text" placeholder="Tu nombre" required>
-                    <input type="email" placeholder="Tu email" required>
-                    <select required>
-                        <option value="">Selecciona un plan</option>
-                        <option value="basico">Básico - $50.000</option>
-                        <option value="estandar">Estándar - $120.000</option>
-                        <option value="premium">Premium - $250.000</option>
-                        <option value="empresarial">Empresarial - Precio a medida</option>
-                    </select>
-                    <textarea placeholder="Cuéntanos sobre tu proyecto" rows="4" required></textarea>
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre completo</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo de proyecto</label>
+                            <select required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="basico">Básico - $50.000</option>
+                                <option value="estandar">Estándar - $120.000</option>
+                                <option value="premium">Premium - $250.000</option>
+                                <option value="empresarial">Empresarial - Precio a medida</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Cuéntanos sobre tu proyecto</label>
+                            <textarea rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Studio314. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo_studio314.png" alt="Studio314">
+                    <p>Transformando ideas en experiencias digitales excepcionales.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#services">Desarrollo Web</a></li>
+                            <li><a href="#services">Inteligencia Artificial</a></li>
+                            <li><a href="#services">Apps Móviles</a></li>
+                            <li><a href="#services">Soluciones Cloud</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#about">Nosotros</a></li>
+                            <li><a href="#portfolio">Portafolio</a></li>
+                            <li><a href="#pricing">Precios</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Studio314. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
