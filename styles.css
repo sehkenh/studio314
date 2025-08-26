@@ -1501,6 +1501,28 @@ body {
         display: none;
     }
     
+    .hero-background {
+        background: var(--primary-color);
+    }
+    
+    .hero-badge {
+        display: none;
+    }
+    
+    .hero-content {
+        padding: 4rem 24px 0;
+    }
+    
+    .hero-title {
+        line-height: 1.3;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-description {
+        line-height: 1.8;
+        margin-bottom: 3rem;
+    }
+    
     .hero-cta {
         flex-direction: column;
         align-items: center;
